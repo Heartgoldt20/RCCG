@@ -1,1 +1,1 @@
-Welcome to G.T.P Eindhoven web page
+Welcome to R.C.C.G Eindhoven web page
