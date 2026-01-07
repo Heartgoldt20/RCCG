@@ -2,11 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title></title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>Glory Tabernacle Parish (G.T.P)</title>
+    <meta
+      name="description"
+      content="Welcome to Glory Tabernacle Parish. Join us every Sunday at 11:00 AM. Connect, belong, learn and grow."
+    />
+    <meta
+      name="keywords"
+      content="Glory Tabernacle Parish, Sunday Service, Worship, Home Cell, Christian"
+    />
+    <meta name="theme-color" content="#0b0b0b" />
 
     <!-- Favicons -->
     <link href="assets/img/rccglogo2.png" rel="icon" />
@@ -21,66 +28,62 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
   <body class="page-index">
     <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center" aria-label="Go to homepage">
           <img
-            style="background-color: transparent; border-radius: 10px"
             src="assets/img/rccglogo.png"
-            alt="logo"
+            alt="Glory Tabernacle Parish logo"
+            style="background-color: transparent; border-radius: 10px"
+            loading="lazy"
+            decoding="async"
           />
         </a>
 
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open menu" role="button"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close menu" role="button"></i>
 
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar" aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+
             <li class="dropdown">
-              <a href="about.html"
-                ><span>About</span>
-                <i class="bi bi-chevron-down dropdown-indicator"></i
-              ></a>
+              <a href="about.html">
+                <span>About</span>
+                <i class="bi bi-chevron-down dropdown-indicator" aria-hidden="true"></i>
+              </a>
               <ul>
                 <li><a href="who-we-are.html">Who We Are</a></li>
                 <li><a href="what-we-do.html">What We Do</a></li>
                 <li><a href="mission.html">Mission Statement</a></li>
               </ul>
             </li>
+
             <li><a href="event.html">Event</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
+
             <li class="dropdown">
-              <a href="#"
-                ><span>Quick Links</span>
-                <i class="bi bi-chevron-down dropdown-indicator"></i
-              ></a>
+              <a href="#">
+                <span>Quick Links</span>
+                <i class="bi bi-chevron-down dropdown-indicator" aria-hidden="true"></i>
+              </a>
               <ul>
                 <li><a href="report.html">ANBI</a></li>
-                <li><a href="#">..</a></li>
+                <li><a href="#">Coming soon</a></li>
               </ul>
             </li>
           </ul>
@@ -95,25 +98,30 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4">
-            <h2 data-aos="fade-up">G.T.P </h2>
+            <h1 data-aos="fade-up">G.T.P</h1>
             <blockquote data-aos="fade-up" data-aos-delay="100">
               <p>
-                Glory Tabernacle Parish Join Us Every Sunday by 11am Prompt CET
-                timezone.
+                Welcome to Glory Tabernacle Parish.<br />
+                Join us every Sunday at <strong>11:00 AM</strong>.
               </p>
             </blockquote>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="d-flex gap-2" data-aos="fade-up" data-aos-delay="200">
               <a href="contact.html" class="btn-get-started">Get in touch</a>
               <a
                 href="https://www.youtube.com/watch?v=pADHjZM789A&t=1981s"
                 class="glightbox btn-watch-video d-flex align-items-center"
-                ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
+                aria-label="Watch our video on YouTube"
               >
+                <i class="bi bi-play-circle" aria-hidden="true"></i>
+                <span>Watch Video</span>
+              </a>
             </div>
           </div>
+
           <div class="col-xl-8 text-center p-3">
-            <h2 class="mb-2" style="color: white">Welcome to church</h2>
-            <p class="text-white fw-bold font-monospace">
+            <h2 class="mb-2 text-white">Welcome to church</h2>
+            <p class="text-white fw-bold font-monospace mb-0">
               Connect &clubs; Belong &clubs; Learn &clubs; Grow
             </p>
           </div>
@@ -128,23 +136,25 @@
         <div class="container" data-aos="fade-up">
           <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
             <div class="col-xl-5">
-              <video width="700" controls>
-                <source src="assets/video/praise.mp4" type="video/mp4" />
-                Your browser does not support HTML video.
-              </video>
+              <div class="ratio ratio-16x9">
+                <video controls preload="metadata">
+                  <source src="assets/video/praise.mp4" type="video/mp4" />
+                  Your browser does not support HTML video.
+                </video>
+              </div>
             </div>
+
             <div class="col-xl-7 slides position-relative">
               <div class="slides-1 swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="item">
-                      <h3 class="mb-3">Pastor E.A. Adeboye's Podcasts</h3>
-                      <h4 class="mb-3"></h4>
+                      <h3 class="mb-3">Pastor E.A. Adeboye’s Podcasts</h3>
                       <p>
                         Click
-                        <a href="https://eaadeboye.com/podcasts/">Here</a> to
-                        Listen to the Latest Sermons From Daddy G.O on all
-                        digital Platforms and be blessed in Jesus Name.
+                        <a href="https://eaadeboye.com/podcasts/" target="_blank" rel="noopener noreferrer">here</a>
+                        to listen to the latest sermons from Daddy G.O. on all digital platforms.
+                        Be blessed in Jesus’ name.
                       </p>
                     </div>
                   </div>
@@ -152,22 +162,22 @@
 
                   <div class="swiper-slide">
                     <div class="item">
-                      <h3 class="mb-3">RCCG CSR</h3>
-                      <h4 class="mb-3"></h4>
+                      <h3 class="mb-3">GTP CSR</h3>
                       <p>
-                        To find out more about the Christian Social
-                        Responsibility of the RCCG through its foundation and to
-                        be part of what God is doing. Click
-                        <a href="https://www.rccg.org/rccg-csr/">Here</a>
+                        Want to know more about the Christian Social Responsibility of the Glory Tabernacle Parish and be part of what God is doing?
+                        Click
+                        <a href="https://www.rccg.org/rccg-csr/" target="_blank" rel="noopener noreferrer">here</a>.
                       </p>
                     </div>
                   </div>
                   <!-- End slide item -->
                 </div>
+
                 <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+
+              <div class="swiper-button-prev" aria-label="Previous slide"></div>
+              <div class="swiper-button-next" aria-label="Next slide"></div>
             </div>
           </div>
         </div>
@@ -184,29 +194,26 @@
                     <div class="card-body">
                       <h4 class="card-title">Worship Experience</h4>
                       <p>
-                        Are you searching for a place of worship in
-                        Noord-Brabant, Eindhoven? <br />A Church to experience
-                        God in-person <br />
-                        and platform to grow spiritually towards God's purpose
-                        for your life.<br />
-                        Then you are welcome to Glory Tabernacle Parish
-                        .<br /><br />
-                        <br />
-                        During the service you will experience God through the
-                        Sunday school session, <br />
-                        Live anointed worship and praise songs, testimonies of
-                        other brothers and sisters,<br />
-                        coupled undiluted word of God by the leading of the Holy
-                        Spirit.<br /><br />
-                        We trust God to give your first timer's blessings and a
-                        live changing experience.
+                        Are you searching for a place of worship in <strong>Eindhoven (Noord-Brabant)</strong>?<br />
+                        A church where you can experience God in person and grow spiritually in God’s purpose for your life?<br /><br />
+
+                        Then you are welcome to Glory Tabernacle Parish.<br /><br />
+
+                        During our service you will experience:
+                        Sunday School, anointed worship and praise, testimonies,
+                        and the undiluted Word of God through the leading of the Holy Spirit.<br /><br />
+
+                        We trust God to give you a warm welcome and a life-changing experience.
                       </p>
                     </div>
                   </div>
+
                   <div class="col-xl-5">
                     <div
                       class="card-bg1"
                       style="background-image: url(assets/img/pastors-wife.png)"
+                      role="img"
+                      aria-label="Church leader portrait"
                     ></div>
                   </div>
                 </div>
@@ -225,65 +232,41 @@
           </div>
 
           <div class="row gy-5">
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="icon flex-shrink-0">
-                <i class="bi bi-arrow-right" style="color: #f57813"></i>
+                <i class="bi bi-arrow-right" style="color: #f57813" aria-hidden="true"></i>
               </div>
               <div>
-                <h4 class="title">
-                  <a href="#" class="stretched-link">Eindhoven</a>
-                </h4>
+                <h4 class="title"><a href="#" class="stretched-link">Eindhoven</a></h4>
                 <p class="description">
-                  House followship holds every Thursdays 7pm - 8pm. You can stay
-                  connected online.
+                  House fellowship holds every <strong>Thursday</strong>, 7:00 PM – 8:00 PM. You can also stay connected online.
                 </p>
               </div>
             </div>
-            <!-- End Service Item -->
 
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <div class="icon flex-shrink-0">
-                <i class="bi bi-arrow-right" style="color: #15a04a"></i>
+                <i class="bi bi-arrow-right" style="color: #15a04a" aria-hidden="true"></i>
               </div>
               <div>
-                <h4 class="title">
-                  <a href="#" class="stretched-link">Best</a>
-                </h4>
+                <h4 class="title"><a href="#" class="stretched-link">Best</a></h4>
                 <p class="description">
-                  House followship holds every Thursdays 9pm - 10pm. You can
-                  stay connected online.
+                  House fellowship holds every <strong>Thursday</strong>, 9:00 PM – 10:00 PM. You can also stay connected online.
                 </p>
               </div>
             </div>
-            <!-- End Service Item -->
 
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <div class="icon flex-shrink-0">
-                <i class="bi bi-arrow-right" style="color: #d90769"></i>
+                <i class="bi bi-arrow-right" style="color: #d90769" aria-hidden="true"></i>
               </div>
               <div>
-                <h4 class="title">
-                  <a href="#" class="stretched-link">Helmond</a>
-                </h4>
+                <h4 class="title"><a href="#" class="stretched-link">Helmond</a></h4>
                 <p class="description">
-                  House followship holds every Thursdays 7pm - 8pm. You can stay
-                  connected online.
+                  House fellowship holds every <strong>Thursday</strong>, 7:00 PM – 8:00 PM. You can also stay connected online.
                 </p>
               </div>
             </div>
-            <!-- End Service Item -->
           </div>
         </div>
       </section>
@@ -297,16 +280,12 @@
               <h2>Our Pastor</h2>
               <p class="fw-normal">
                 You are welcome to Glory Tabernacle Parish.<br />
-                The Presence and the Power of God is ever-present <br />Heaven
-                is our final goal while fulfilling the will and plan of God here
-                on earth. <br />
-                We are committed to sharing the unconditional love of God<br />
-                through the life of Christ and prayer. Welcome and God bless
-                you.
+                The presence and power of God is ever-present.<br />
+                Heaven is our final goal, while fulfilling the will and plan of God here on earth.<br />
+                We are committed to sharing the unconditional love of God through the life of Christ and prayer.<br />
+                Welcome, and God bless you.
               </p>
-              <p class="fw-bold">
-                Our vision is to Pursue Holiness. (Hebrews 12:14)
-              </p>
+              <p class="fw-bold">Our vision is to pursue holiness. (Hebrews 12:14)</p>
             </div>
           </div>
         </div>
@@ -321,119 +300,81 @@
           </div>
 
           <div class="row gy-5">
-            <div
-              class="col-xl-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="post-box">
                 <div class="post-img">
                   <img
                     src="assets/img/sunday-school.jpeg"
                     class="img-fluid"
-                    alt=""
+                    alt="Sunday School teachers"
+                    loading="lazy"
+                    decoding="async"
                   />
-                </div>
-                <div class="meta">
-                  <!-- <span class="post-date">Tue, December 12</span>
-                  <span class="post-author"> / Julia Parker</span> -->
                 </div>
                 <h3 class="post-title">Sunday School Teachers</h3>
                 <p>
-                  Learn to disciple and nurture others by joining the Sunday
-                  school department. Grow your skills as a public speaker.
-                  <br />
-                  <span class="fw-bold">Matthew. 28:19-20</span>
+                  Learn to disciple and nurture others by joining the Sunday School department.
+                  Grow your skills as a public speaker.<br />
+                  <span class="fw-bold">Matthew 28:19–20</span>
                 </p>
-                <!-- <a href="#" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
-                ></a> -->
               </div>
             </div>
 
-            <div
-              class="col-xl-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="post-box">
                 <div class="post-img">
                   <img
                     src="assets/img/usher1.jpeg"
                     class="img-fluid"
-                    alt="usher"
+                    alt="Ushering and protocol team"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
-                <div class="meta">
-                  <!-- <span class="post-date">Fri, September 05</span>
-                  <span class="post-author"> / Mario Douglas</span> -->
-                </div>
-                <h3 class="post-title">Ushering <i class="">(Protocol)</i></h3>
+                <h3 class="post-title">Ushering <span class="fw-normal">(Protocol)</span></h3>
                 <p>
-                  Help to maintain orderliness and decency in the house of God
-                  by joining the protocol/ushering department. <br />
-                  <span class="fw-bold">1 Corinthians. 14:40</span>
+                  Help maintain order and decency in the house of God by joining the protocol/ushering department.<br />
+                  <span class="fw-bold">1 Corinthians 14:40</span>
                 </p>
-                <!-- <a href="#" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
-                ></a> -->
               </div>
             </div>
 
-            <div
-              class="col-xl-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div class="post-box">
                 <div class="post-img">
                   <img
                     src="assets/img/choir.jpeg"
                     class="img-fluid"
-                    alt="choir"
+                    alt="Church choir singing"
+                    loading="lazy"
+                    decoding="async"
                   />
-                </div>
-                <div class="meta">
-                  <!-- <span class="post-date">Tue, July 27</span>
-                  <span class="post-author"> / Lisa Hunter</span> -->
                 </div>
                 <h3 class="post-title">Choir</h3>
                 <p>
-                  We are created as instruments of worship to God. Learn and
-                  lead God children in the presence of God through music
-                  (Worship & Praise) <br />
+                  We are created as instruments of worship to God. Learn and lead God’s children in worship and praise through music.<br />
                   <span class="fw-bold">Psalm 50:6</span>
                 </p>
               </div>
             </div>
 
-            <div
-              class="col-xl-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
               <div class="post-box">
                 <div class="post-img">
                   <img
                     src="assets/img/children.jpeg"
                     class="img-fluid"
-                    alt="teacher"
+                    alt="Children ministry"
+                    loading="lazy"
+                    decoding="async"
                   />
-                </div>
-                <div class="meta">
-                  <!-- <span class="post-date">Tue, Sep 16</span>
-                  <span class="post-author"> / Mario Douglas</span> -->
                 </div>
                 <h3 class="post-title">Children</h3>
                 <p>
-                  Be a part of those investing in the future leaders of
-                  tomorrow, help children work in the path of righteousness by
-                  becoming a children teacher. <br />
+                  Be part of investing in the future leaders of tomorrow.
+                  Help children walk in the path of righteousness by serving in the Children’s ministry.<br />
                   <span class="fw-bold">Daniel 12:13</span>
                 </p>
-                <!-- <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
-                ></a> -->
               </div>
             </div>
           </div>
@@ -448,27 +389,19 @@
           </div>
 
           <div class="row gy-4">
-            <!-- End upcoming -->
-
-            <!-- End upcoming -->
-
-            <!-- End upcoming -->
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
               <div class="team-member">
                 <div class="member-img">
                   <img
                     src="assets/img/team/upcoming01.jpeg"
                     class="img-fluid"
-                    alt=""
+                    alt="Program theme banner"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="member-info">
-                  <h4>Not By Might Not By Power</h4>
+                  <h4>Not By Might, Not By Power</h4>
                   <span>Theme</span>
                 </div>
               </div>
@@ -486,75 +419,74 @@
         <div class="container">
           <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-info">
-              <a href="index.html" class="">
+              <a href="index.html" aria-label="Go to homepage">
                 <img
                   width="100"
                   height="100"
                   src="assets/img/rccglogo2.png"
-                  alt="logo"
+                  alt="RCCG logo"
+                  loading="lazy"
+                  decoding="async"
                 />
               </a>
-              <p class="">
-                Glory Tabernacle is a multi-cultural church, Both young and old
-                gather to worship God, irrespective of their background. We love
-                you with the love of God.
+
+              <p>
+                Glory Tabernacle is a multi-cultural church where both young and old gather to worship God,
+                irrespective of background. We love you with the love of God.
               </p>
+
               <div class="social-links d-flex mt-3">
                 <a
                   href="https://www.facebook.com/rccgeindhoven/"
                   class="facebook"
                   target="_blank"
-                  ><i class="bi bi-facebook"></i
-                ></a>
+                  rel="noopener noreferrer"
+                  aria-label="Visit our Facebook page"
+                >
+                  <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+
                 <a
                   href="https://www.instagram.com/invites/contact/?i=5i4rrfv44k48&utm_content=2n69vef"
                   class="instagram"
                   target="_blank"
-                  ><i class="bi bi-instagram"></i
-                ></a>
+                  rel="noopener noreferrer"
+                  aria-label="Visit our Instagram page"
+                >
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+
                 <a
                   href="https://youtube.com/channel/UC_jLVpVc0QI48kDSHW5lQfg"
                   class="youtube"
                   target="_blank"
-                  ><i class="bi bi-youtube"></i
-                ></a>
+                  rel="noopener noreferrer"
+                  aria-label="Visit our YouTube channel"
+                >
+                  <i class="bi bi-youtube" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
 
-            <div
-              class="col-lg-4 text-center col-md-12 footer-links text-md-start"
-            >
+            <div class="col-lg-4 text-center col-md-12 footer-links text-md-start">
               <h4>Useful Links</h4>
-              <ul class="">
-                <li>
-                  <i class="bi bi-dash"></i> <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <i class="bi bi-dash"></i> <a href="about.html">About us</a>
-                </li>
-                <li>
-                  <i class="bi bi-dash"></i> <a href="event.html">Event</a>
-                </li>
-                <li>
-                  <i class="bi bi-dash"></i> <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                  <i class="bi bi-dash"></i>
-                  <a href="contact.html">Contact us</a>
-                </li>
+              <ul>
+                <li><i class="bi bi-dash"></i> <a href="index.html">Home</a></li>
+                <li><i class="bi bi-dash"></i> <a href="about.html">About us</a></li>
+                <li><i class="bi bi-dash"></i> <a href="event.html">Event</a></li>
+                <li><i class="bi bi-dash"></i> <a href="gallery.html">Gallery</a></li>
+                <li><i class="bi bi-dash"></i> <a href="contact.html">Contact us</a></li>
               </ul>
             </div>
 
-            <div
-              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-            >
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
               <h4>Location</h4>
               <p>
                 Wijkcentrum de Mortel <br />
-                Savoiepad 14 5627DX<br />
-                Eindhoven, The Netherlands. <br /><br />
-                <strong>Phone:</strong> +31634146688, +31651549995<br />
-                <strong>Email:</strong>gtpeindhoven@rccgeurope.org<br />
+                Savoiepad 14, 5627DX<br />
+                Eindhoven, The Netherlands <br /><br />
+                <strong>Phone:</strong> +31 6 34146688, +31 6 51549995<br />
+                <strong>Email:</strong> gtpeindhoven@rccgeurope.org<br />
               </p>
             </div>
           </div>
@@ -564,25 +496,21 @@
       <div class="footer-legal">
         <div class="container">
           <div class="copyright">
-            &copy; Copyright <strong><span>G.T.P</span></strong
-            >. All Rights Reserved
+            &copy; <span id="year"></span> <strong><span>G.T.P</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
-            Designed by
-            <a href="https://portfolio-alisidaniel.vercel.app/">Me</a>
+            Designed by <a href="https://portfolio-alisidaniel.vercel.app/" target="_blank" rel="noopener noreferrer">Me</a>
           </div>
         </div>
       </div>
     </footer>
     <!-- End Footer -->
 
-    <a
-      href="#"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+      <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+    </a>
 
-    <div id="preloader"></div>
+    <div id="preloader" aria-hidden="true"></div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -594,6 +522,10 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Small helper: footer year -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
-
