@@ -2206,3 +2206,256 @@ section {
   font-size: 13px;
   color: var(--color-secondary);
 }
+
+/* ==========================================================
+   GOLD + WHITE THEME (override) — plak ONDERAAN je CSS
+   ========================================================== */
+
+/* 1) Kleurenpalet */
+:root {
+  /* Base */
+  --color-default: #1a1a1a;      /* tekst */
+  --color-secondary: #111827;    /* donkere headings/nav overlays */
+
+  /* Gold accents */
+  --color-primary: #d4af37;      /* goud */
+  --color-primary-hover: #b8932e;
+  --color-primary-soft: rgba(212, 175, 55, 0.18);
+
+  /* Surfaces */
+  --color-bg: #ffffff;
+  --color-bg-soft: #fffaf0;      /* zachte ivory */
+  --color-surface: #ffffff;
+
+  /* Borders + muted text */
+  --color-border: rgba(17, 24, 39, 0.12);
+  --color-muted: rgba(17, 24, 39, 0.65);
+
+  /* Overlays */
+  --overlay-dark: rgba(17, 24, 39, 0.72);
+  --overlay-dark-2: rgba(17, 24, 39, 0.62);
+}
+
+/* 2) Global */
+body {
+  background: var(--color-bg);
+  color: var(--color-default);
+}
+
+a {
+  color: var(--color-primary);
+}
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Section header underline */
+.section-header h2:after {
+  background: var(--color-primary);
+}
+
+/* 3) Breadcrumbs (gold accent, dark overlay) */
+.breadcrumbs:before {
+  background-color: var(--overlay-dark);
+}
+.breadcrumbs ol {
+  color: var(--color-primary);
+}
+
+/* 4) Scroll top */
+.scroll-top {
+  background: var(--color-primary);
+}
+.scroll-top:hover {
+  background: var(--color-primary-hover);
+}
+
+/* 5) Preloader */
+#preloader {
+  background: var(--color-bg);
+}
+#preloader:before {
+  border: 6px solid var(--color-primary);
+  border-top-color: var(--color-bg);
+}
+
+/* 6) Header / Navbar */
+.header.sticked {
+  background: rgba(17, 24, 39, 0.92);
+}
+
+@media (min-width: 1280px) {
+  .navbar a,
+  .navbar a:focus {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover > a {
+    color: #ffffff;
+  }
+
+  .navbar .dropdown ul {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    box-shadow: 0px 10px 30px rgba(17, 24, 39, 0.12);
+  }
+
+  .navbar .dropdown ul a {
+    color: var(--color-secondary);
+  }
+
+  .navbar .dropdown ul a:hover,
+  .navbar .dropdown ul .active:hover,
+  .navbar .dropdown ul li:hover > a {
+    color: var(--color-primary);
+  }
+}
+
+@media (max-width: 1279px) {
+  .navbar ul {
+    background: rgba(17, 24, 39, 0.94);
+  }
+  .navbar a,
+  .navbar a:focus {
+    color: rgba(255, 255, 255, 0.82);
+  }
+  .navbar .dropdown ul,
+  .navbar .dropdown .dropdown ul {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* 7) Hero (goud accent, nette overlay) */
+.hero:before {
+  background: var(--overlay-dark-2);
+}
+
+@media (min-width: 1034px) {
+  .hero:after {
+    background: rgba(17, 24, 39, 0.92);
+  }
+}
+
+.hero blockquote {
+  border-left: 2px solid var(--color-primary);
+}
+
+.hero .btn-get-started {
+  background: var(--color-primary);
+  color: #111;
+}
+.hero .btn-get-started:hover {
+  background: var(--color-primary-hover);
+  color: #111;
+}
+
+.hero .btn-watch-video i {
+  color: var(--color-primary);
+}
+.hero .btn-watch-video:hover i {
+  color: var(--color-primary-hover);
+}
+
+/* 8) Light sections & cards (meer wit/ivory) */
+.why-us .slides,
+.features .details,
+.services-cards,
+.footer .footer-content {
+  background-color: var(--color-bg-soft);
+}
+
+.team .team-member,
+.services-cards .card-item,
+.testimonials .testimonial-item,
+.blog .blog-details,
+.blog .sidebar .recent-posts .post-item,
+.blog .comments .reply-form,
+.portfolio-details .portfolio-info {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0px 10px 25px rgba(17, 24, 39, 0.08);
+}
+
+/* 9) Headings + muted text */
+.why-us h3,
+.about .content h3,
+.features h3,
+.features .details h4,
+.services-list .service-item .title a,
+.recent-posts .post-box .post-title,
+.portfolio-details .portfolio-description h2,
+.footer .footer-content .footer-info p,
+.footer .footer-content .footer-info .logo span {
+  color: var(--color-secondary);
+}
+
+.about .content p,
+.features .icon-list span,
+.recent-posts .post-box p {
+  color: var(--color-muted);
+}
+
+/* 10) Icons / accents */
+.about .content ul i,
+.contact .info-item i,
+.blog .sidebar .tags ul a:hover,
+.portfolio .portfolio-flters li:hover,
+.portfolio .portfolio-flters li.filter-active {
+  color: #111;
+  background: var(--color-primary);
+}
+
+/* Contact icon bubble */
+.contact .info-item i {
+  background: var(--color-primary);
+  color: #111;
+}
+
+/* 11) Buttons (vervang oude blauwe kleuren) */
+.call-to-action .cta-btn,
+.features .details .btn-get-started,
+.contact .php-email-form button[type="submit"],
+.blog .blog-pagination li.active a,
+.blog .blog-pagination li:hover a,
+.blog .sidebar .search-form form button {
+  background: var(--color-primary) !important;
+  color: #111 !important;
+}
+
+.call-to-action .cta-btn:hover,
+.features .details .btn-get-started:hover,
+.contact .php-email-form button[type="submit"]:hover,
+.blog .sidebar .search-form form button:hover {
+  background: var(--color-primary-hover) !important;
+  color: #111 !important;
+}
+
+/* 12) Pagination / bullets */
+.testimonials .swiper-pagination .swiper-pagination-bullet-active,
+.why-us .swiper-pagination .swiper-pagination-bullet-active,
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+/* 13) Borders & subtle separators */
+.blog .posts-list article,
+.portfolio-details .portfolio-info h3 {
+  border-bottom-color: var(--color-border);
+}
+
+/* 14) Blog quote bar */
+.blog .blog-details .content blockquote:after {
+  background-color: var(--color-primary);
+}
+
+/* 15) Optional: maak links in footer iets “goudiger” */
+.footer .footer-content .footer-links ul i {
+  color: var(--color-primary);
+}
+.footer .footer-content .footer-links ul a:hover {
+  color: var(--color-primary);
+}
