@@ -36,15 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
     el.addEventListener('click', function(event) {
       event.preventDefault();
-      mobileNavToogle();
+      mobileNavToggle();
     })
   });
 
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
+  function updateMobileNavAria(isOpen) {
+    mobileNavShow.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    mobileNavHide.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  function mobileNavToggle() {
+    const isActive = document.body.classList.toggle('mobile-nav-active');
     mobileNavShow.classList.toggle('d-none');
     mobileNavHide.classList.toggle('d-none');
+    updateMobileNavAria(isActive);
   }
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && document.body.classList.contains('mobile-nav-active')) {
+      mobileNavToggle();
+    }
+  });
 
   /**
    * Toggle mobile nav dropdowns
@@ -55,8 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('click', function(event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
-        this.classList.toggle('active');
+        const isOpen = this.classList.toggle('active');
         this.nextElementSibling.classList.toggle('dropdown-active');
+        this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 
         let dropDownIndicator = this.querySelector('.dropdown-indicator');
         dropDownIndicator.classList.toggle('bi-chevron-up');
@@ -75,10 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', togglescrollTop);
     document.addEventListener('scroll', togglescrollTop);
-    scrollTop.addEventListener('click', window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    }));
+    scrollTop.addEventListener('click', function(event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   }
 
   /**

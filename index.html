@@ -17,19 +17,20 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:url" content="https://glorytabernacleparish.nl/" />
     <meta property="og:title" content="Glory Tabernacle Parish (G.T.P)" />
     <meta property="og:description" content="Welcome to Glory Tabernacle Parish. Join us every Sunday at 11:00 AM. Connect, belong, learn and grow." />
-    <meta property="og:image" content="https://yourwebsite.com/assets/img/rccglogo2.png" />
+    <meta property="og:image" content="https://glorytabernacleparish.nl/assets/img/rccglogo2.png" />
+    <meta property="og:image:alt" content="Glory Tabernacle Parish logo" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://yourwebsite.com/" />
+    <meta property="twitter:url" content="https://glorytabernacleparish.nl/" />
     <meta property="twitter:title" content="Glory Tabernacle Parish (G.T.P)" />
     <meta property="twitter:description" content="Welcome to Glory Tabernacle Parish. Join us every Sunday at 11:00 AM. Connect, belong, learn and grow." />
-    <meta property="twitter:image" content="https://yourwebsite.com/assets/img/rccglogo2.png" />
+    <meta property="twitter:image" content="https://glorytabernacleparish.nl/assets/img/rccglogo2.png" />
 
-    <link rel="canonical" href="https://yourwebsite.com/" />
+    <link rel="canonical" href="https://glorytabernacleparish.nl/" />
 
     <!-- Favicons -->
     <link href="assets/img/rccglogo2.png" rel="icon" />
@@ -61,8 +62,8 @@
       "@type": "Church",
       "name": "Glory Tabernacle Parish",
       "alternateName": "G.T.P",
-      "url": "https://yourwebsite.com",
-      "logo": "https://yourwebsite.com/assets/img/rccglogo2.png",
+      "url": "https://glorytabernacleparish.nl",
+      "logo": "https://glorytabernacleparish.nl/assets/img/rccglogo2.png",
       "description": "A welcoming, Spirit-filled community that honours God, grows disciples, and serves the neighbourhood with compassion.",
       "address": {
         "@type": "PostalAddress",
@@ -100,15 +101,15 @@
           />
         </a>
 
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open menu" role="button"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close menu" role="button"></i>
+        <button class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open menu" aria-expanded="false"></button>
+        <button class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close menu" aria-expanded="false"></button>
 
         <nav id="navbar" class="navbar" aria-label="Primary navigation">
           <ul>
             <li><a href="index.html" class="active" aria-current="page">Home</a></li>
 
             <li class="dropdown">
-              <a href="about.html">
+              <a href="about.html" aria-haspopup="true" aria-expanded="false">
                 <span>About</span>
                 <i class="bi bi-chevron-down dropdown-indicator" aria-hidden="true"></i>
               </a>
@@ -126,19 +127,21 @@
             <li><a href="contact.html">Contact</a></li>
 
             <li class="dropdown">
-              <a href="#">
+              <a href="#" aria-haspopup="true" aria-expanded="false">
                 <span>Quick Links</span>
                 <i class="bi bi-chevron-down dropdown-indicator" aria-hidden="true"></i>
               </a>
               <ul>
                 <li><a href="report.html">ANBI</a></li>
-                <li><a href="#">Coming soon</a></li>
+                <li><span class="disabled-link">Coming soon</span></li>
                 <li><a href="prayer-request.html">Prayer Request</a></li>
               </ul>
             </li>
           </ul>
         </nav>
         <!-- .navbar -->
+
+        <a href="prayer-request.html" class="header-cta btn-get-started d-none d-xl-inline-flex">Prayer request</a>
       </div>
     </header>
     <!-- End Header -->
@@ -156,8 +159,13 @@
               </p>
             </blockquote>
 
-            <div class="d-flex gap-2" data-aos="fade-up" data-aos-delay="200">
-              <a href="contact.html" class="btn-get-started">Get in touch</a>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="150">
+              Worship in Eindhoven every Sunday, with a strong welcome for families, first-time visitors, and seekers of hope.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2" data-aos="fade-up" data-aos-delay="200">
+              <a href="#visit-us" class="btn-get-started">Plan your visit</a>
+              <a href="contact.html" class="btn-get-started btn-secondary">Get in touch</a>
               <a
                 href="https://www.youtube.com/watch?v=pADHjZM789A&t=1981s"
                 class="glightbox btn-watch-video d-flex align-items-center"
@@ -179,6 +187,41 @@
       </div>
     </section>
     <!-- End Hero Section -->
+
+    <section id="visit-us" class="visit-us">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Plan your visit</h2>
+          <p>Everything you need to know before your first arrival at Glory Tabernacle Parish.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="visit-card">
+              <div class="visit-icon"><i class="bi bi-clock-history" aria-hidden="true"></i></div>
+              <h3>Service Times</h3>
+              <p>Join us Sundays at 11:00 AM. Home cell fellowship is held Thursdays at 7:00 PM.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="visit-card">
+              <div class="visit-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+              <h3>Location</h3>
+              <p>Wijkcentrum de Mortel, Savoiepad 14, 5627DX Eindhoven, The Netherlands.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="visit-card">
+              <div class="visit-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+              <h3>What to expect</h3>
+              <p>Warm welcome, worship, prayer, family-friendly children’s ministry, and a strong community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <main id="main">
       <!-- ======= Video Section ======= -->
@@ -287,7 +330,7 @@
                 <i class="bi bi-arrow-right" style="color: #f57813" aria-hidden="true"></i>
               </div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Eindhoven</a></h4>
+                <h4 class="title"><span class="disabled-link">Eindhoven</span></h4>
                 <p class="description">
                   House fellowship holds every <strong>Thursday</strong>, 7:00 PM – 8:00 PM. You can also stay connected online.
                 </p>
@@ -299,7 +342,7 @@
                 <i class="bi bi-arrow-right" style="color: #15a04a" aria-hidden="true"></i>
               </div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Best</a></h4>
+                <h4 class="title"><span class="disabled-link">Best</span></h4>
                 <p class="description">
                   House fellowship holds every <strong>Thursday</strong>, 9:00 PM – 10:00 PM. You can also stay connected online.
                 </p>
@@ -311,7 +354,7 @@
                 <i class="bi bi-arrow-right" style="color: #d90769" aria-hidden="true"></i>
               </div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Helmond</a></h4>
+                <h4 class="title"><span class="disabled-link">Helmond</span></h4>
                 <p class="description">
                   House fellowship holds every <strong>Thursday</strong>, 7:00 PM – 8:00 PM. You can also stay connected online.
                 </p>

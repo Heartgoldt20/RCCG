@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>G.T.P - About</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>G.T.P - What We Do</title>
+    <meta name="description" content="Discover the ministries, outreach and service activities of Glory Tabernacle Parish in Eindhoven." />
+    <meta name="keywords" content="RCCG ministries, church outreach, Glory Tabernacle Parish, community service" />
+    <meta name="theme-color" content="#d4af37" />
+    <link rel="canonical" href="https://glorytabernacleparish.nl/what-we-do.html" />
 
     <!-- Favicons -->
     <link href="assets/img/rccglogo2.png" rel="icon" />
@@ -48,10 +50,10 @@
         class="container-fluid container-xl d-flex align-items-center justify-content-between"
       >
 
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <button class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open menu" aria-expanded="false"></button>
+        <button class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close menu" aria-expanded="false"></button>
 
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar" aria-label="Primary navigation">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li class="dropdown">
@@ -71,13 +73,13 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="dropdown">
-              <a href="#"
+              <a href="#" aria-haspopup="true" aria-expanded="false"
                 ><span>Quick Links</span>
-                <i class="bi bi-chevron-down dropdown-indicator"></i
+                <i class="bi bi-chevron-down dropdown-indicator" aria-hidden="true"></i
               ></a>
               <ul>
                 <li><a href="report.html">ANBI</a></li>
-                <li><a href="#">..</a></li>
+                <li><span class="disabled-link">Coming soon</span></li>
                 <li><a href="prayer-request.html">Prayer Request</a></li>
               </ul>
             </li>
