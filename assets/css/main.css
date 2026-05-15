@@ -1770,3 +1770,39 @@ section {
   color: var(--color-muted);
 }
 
+/* =========================
+   Visual polish: buttons, cards, hero tweaks
+   Added for improved contrast, spacing and micro-interactions
+   ========================= */
+.btn-get-started {
+  background: linear-gradient(180deg,var(--color-primary),var(--color-primary-hover));
+  color: #fff !important;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 26px rgba(20,20,20,0.12);
+  font-weight: 800;
+}
+
+.btn-get-started:hover { transform: translateY(-3px); }
+
+.card-item, .recent-posts .post-box, .team .team-member {
+  border-radius: 14px;
+  transition: transform 220ms var(--ease), box-shadow 220ms var(--ease);
+}
+
+.card-item { box-shadow: 0 8px 26px rgba(17,17,17,0.06); padding: 22px }
+
+.team .team-member .member-img img { border-radius: 12px; transition: transform 280ms var(--ease); }
+.team .team-member:hover .member-img img { transform: scale(1.03); }
+
+/* Slightly tighten hero spacing and improve CTA contrast */
+.hero { padding: 80px 0; }
+.hero .btn-get-started { box-shadow: 0 12px 30px rgba(212,175,55,0.22); }
+
+/* Improve readability for smaller screens */
+@media (max-width: 768px) {
+  .section-header h2 { font-size: 22px }
+  .hero { padding: 48px 0 }
+}
+
+
