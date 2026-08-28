@@ -68,3 +68,18 @@ main section,.cards article,.gallery figure{opacity:1!important;transform:none!i
 /* Text-only navigation controls. */
 .mobileMenu{font-size:10px!important;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.lightboxClose{top:24px!important;right:28px!important;font:700 9px/1 var(--sans)!important;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.6)!important;padding:0 0 7px!important}.lightboxNav{width:auto!important;height:auto!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.55)!important;border-radius:0!important;padding:0 0 7px!important;font:700 9px/1 var(--sans)!important;letter-spacing:.11em;text-transform:uppercase}.lightboxNav:hover,.lightboxNav:focus-visible{background:transparent!important;color:#e1c77e!important}
 @media(max-width:560px){.lightboxPrev{left:24px!important}.lightboxNext{right:24px!important}.lightboxClose{right:18px!important}}
+
+
+/* Compact information cards and a complete About story. */
+.aboutStory{align-items:start}
+.aboutStatement{max-width:460px;margin:38px 0 0;padding-top:24px;border-top:1px solid var(--line);color:#757b76;font-size:14px;line-height:1.7}
+.aboutDetails{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}
+.aboutDetails article{padding:28px;background:#f3efe5;border-radius:18px}
+.aboutDetails small{color:#8c6a2f;text-transform:uppercase;letter-spacing:.15em;font-size:9px;font-weight:700}
+.aboutDetails p{margin:14px 0 0!important;color:#334039!important;line-height:1.6!important}
+.valueGrid article{min-height:235px}
+.contactChannelGrid article{min-height:330px}
+.contactChannelGrid article>div:nth-child(2){margin:48px 0 34px}
+.portrait{background-image:url('/hero-about.webp');background-position:center 28%;background-repeat:no-repeat}
+@media(max-width:900px){.aboutDetails{grid-template-columns:1fr}.contactChannelGrid article{min-height:300px}}
+@media(max-width:560px){.contactChannelGrid article{min-height:280px}.contactChannelGrid article>div:nth-child(2){margin:38px 0 28px}}
