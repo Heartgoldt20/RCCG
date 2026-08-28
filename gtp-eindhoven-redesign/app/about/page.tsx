@@ -19,7 +19,7 @@ export default function About() {
       </div>
     </section>
     <section className="values pad"><p className="eyebrow">What shapes us</p><div className="valueGrid"><Value n="01" title="Connect" text="We encounter God and build genuine relationships across cultures and generations."/><Value n="02" title="Belong" text="Everyone deserves a spiritual home where they are known, welcomed and valued."/><Value n="03" title="Learn" text="We grow through Scripture, prayer and the guidance of the Holy Spirit."/><Value n="04" title="Grow" text="Faith becomes visible as we serve, lead and live with purpose every day."/></div></section>
-    <section className="pastors"><div className="portrait" role="img" aria-label="Leadership at Glory Tabernacle Parish"/><div className="pastorText"><p className="eyebrow pale">Our pastors</p><blockquote>Dennis &amp; Titilayo Shakka</blockquote><p>They serve with a deep passion for God, His Word and His people, committed to sharing God&apos;s unconditional love and nurturing spiritual growth in every believer.</p></div></section>
+    <section className="pastors"><div className="portrait pastorPair"><img src="/pastor-titilayo.jpeg" alt="Pastor Titilayo Shakka preaching at Glory Tabernacle Parish"/><img src="/pastor-dennis.jpeg" alt="Pastor Dennis Shakka leading prayer at Glory Tabernacle Parish"/></div><div className="pastorText"><p className="eyebrow pale">Our pastors</p><blockquote>Dennis &amp; Titilayo Shakka</blockquote><p>They serve with a deep passion for God, His Word and His people, committed to sharing God&apos;s unconditional love and nurturing spiritual growth in every believer.</p></div></section>
     <InnerCta/>
   </Shell>;
 }
